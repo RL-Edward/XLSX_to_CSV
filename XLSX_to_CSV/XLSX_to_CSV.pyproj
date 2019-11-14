@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>XLSX_to_CSV</Name>
     <RootNamespace>XLSX_to_CSV</RootNamespace>
+    <InterpreterId>Global|VisualStudio|Python37-32</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Threader.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="XLSX_to_CSV.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|Python37-32" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
