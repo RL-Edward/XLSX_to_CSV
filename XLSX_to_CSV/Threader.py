@@ -14,7 +14,6 @@ class Threader:
             for job in job_list:
               thread_result_list.append(executor.submit(job[0], None, **job[1]))
         executor.shutdown()
-        print(thread_result_list[0].result())
         return thread_result_list
 
           
